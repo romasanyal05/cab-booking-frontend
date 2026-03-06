@@ -6,7 +6,7 @@ export default function RideHistory() {
   const [rides, setRides] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/rides?status=completed")
+    fetch("https://cab-booking-backend-f40a.onrender.com/api/rides?status=completed")
       .then(res => res.json())
       .then(data => setRides(data));
   }, []);

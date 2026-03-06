@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
   useEffect(() => {
     if (!rideId) return;
 
-    fetch(`http://localhost:5000/api/payments/${rideId}`)
+    fetch(`http://https://cab-booking-backend-f40a.onrender.com/api/payments/${rideId}`)
       .then((res) => res.json())
       .then((data) => setPayment(data));
   }, [rideId]);

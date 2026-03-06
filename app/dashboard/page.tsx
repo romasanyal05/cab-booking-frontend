@@ -20,7 +20,7 @@ export default function Dashboard() {
  // const [loading, setLoading] = useState(true);
 
   //useEffect(() => {
-   // fetch("http://localhost:5000/api/users")
+   // fetch("https://cab-booking-backend-f40a.onrender.com")
      // .then((res) => res.json())
      // .then((data) => {
       //  setUsers(data);
@@ -95,7 +95,7 @@ export default function Dashboard() {
             const phone = (form.elements.namedItem("phone") as HTMLInputElement)
               .value;
 
-            await fetch(`http://localhost:5000/api/users/${id}`, {
+            await fetch(`http://https://cab-booking-backend-f40a.onrender.com/api/users/${id}`, {
               method: "PUT",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({ name, phone }),
@@ -134,7 +134,7 @@ export default function Dashboard() {
 if (!user_id || !pickup_location || !drop_location) {
   return;
 }
-      const res = await fetch("http://localhost:5000/api/rides", {
+      const res = await fetch("http://https://cab-booking-backend-f40a.onrender.com/api/rides", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

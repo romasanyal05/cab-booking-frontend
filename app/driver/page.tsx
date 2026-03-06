@@ -20,7 +20,7 @@ export default function DriverDashboard() {
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/driver/${DRIVER_ID}/rating`)
+    fetch(`http://https://cab-booking-backend-f40a.onrender.com/api/driver/${DRIVER_ID}/rating`)
       .then((res) => res.json())
       .then((data) => {
         setAverage(data.average || 0);
@@ -38,7 +38,7 @@ export default function DriverDashboard() {
     try {
       setLoading(true);
       const res = await fetch(
-        `http://localhost:5000/api/rides?city=${city}`
+        `http://https://cab-booking-backend-f40a.onrender.com/api/rides?city=${city}`
       );
 
       if (!res.ok) {
@@ -58,7 +58,7 @@ export default function DriverDashboard() {
   const updateStatus = async (rideId: string, action: string) => {
     try {
       const res = await fetch(
-        `http://localhost:5000/api/rides/${rideId}/${action}`,
+     `https://cab-booking-backend-f40a.onrender.com/api/rides/${rideId}/${action}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
