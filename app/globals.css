@@ -24,3 +24,105 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.btn-green {
+  background: #16a34a;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.btn-blue {
+  background: #2563eb;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.btn-purple {
+  background: #7c3aed;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+/* Receipt Layout */
+
+.receipt-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f6f9;
+  padding: 20px;
+}
+
+.receipt-card {
+  background: white;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.receipt-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.status-badge {
+  background: #28a745;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.receipt-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.print-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.print-btn:hover {
+  opacity: 0.9;
+}
+/* Print Styling */
+
+@media print {
+  body {
+    background: white !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .receipt-card {
+    box-shadow: none !important;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .receipt-container {
+    padding: 0;
+    background: white;
+  }
+}
