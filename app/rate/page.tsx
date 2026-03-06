@@ -16,7 +16,7 @@ import { useRouter } from "next/navigation";
   const submitRating = async () => {
     if (!rideId || !driverId) return;
 
-    const res = await fetch("http://https://cab-booking-backend-f40a.onrender.com/api/ratings", {
+    const res = await fetch("https://cab-booking-backend-f40a.onrender.com/api/ratings", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

@@ -16,7 +16,7 @@ export default function CheckoutForm({ amount, rideId, driverId }: { amount: num
   console.log("🔹 Amount:", amount);
 
   const res = await fetch(
-    "http://https://cab-booking-backend-f40a.onrender.com/api/create-payment-intent",
+    "https://cab-booking-backend-f40a.onrender.com/api/create-payment-intent",
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
