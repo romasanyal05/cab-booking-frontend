@@ -42,7 +42,7 @@ export default function CheckoutForm({ amount, rideId, driverId }: { amount: num
 
   // 1️⃣ Mark ride as paid
   const payRes = await fetch(
-    `http://https://cab-booking-backend-f40a.onrender.com/api/rides/${rideId}/pay`,
+    `https://cab-booking-backend-f40a.onrender.com/api/rides/${rideId}/pay`,
     {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
@@ -54,7 +54,7 @@ export default function CheckoutForm({ amount, rideId, driverId }: { amount: num
 
   // 2️⃣ Send receipt email
   const emailRes = await fetch(
-    "http://https://cab-booking-backend-f40a.onrender.com/api/send-receipt",
+    "https://cab-booking-backend-f40a.onrender.com/api/send-receipt",
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
