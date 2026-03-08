@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🚖 Cab Booking Application
 
-## Getting Started
+A full-stack Cab Booking web application where users can book rides, make payments, receive email receipts, and rate drivers after completing the ride.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🌐 Live Project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Frontend:
+https://cab-booking-frontend-flax.vercel.app
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Backend:
+https://cab-booking-backend-f40a.onrender.com
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+🎥 Project Demo Video
 
-To learn more about Next.js, take a look at the following resources:
+Watch the complete project demonstration here:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+https://drive.google.com/file/d/1accYdCu8SZuOxxp88_VjuPc2eluWElzL/view?usp=drivesdk
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+📁 GitHub Repositories
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Frontend Repository:
+https://github.com/romasanyal05/cab-booking-frontend
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Backend Repository:
+https://github.com/romasanyal05/cab-booking-backend
+
+---
+
+✨ Features
+
+- Book a cab ride
+- Secure payment using Stripe
+- Email receipt sent after successful payment
+- Driver rating system after ride completion
+- Ride and rating data stored in database
+
+---
+
+🛠 Tech Stack
+
+Frontend
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+
+Backend
+
+- Node.js
+- Express.js
+
+Database
+
+- Supabase (PostgreSQL)
+
+Payment Integration
+
+- Stripe API
+
+Email Service
+
+- Brevo SMTP
+
+Deployment
+
+- Frontend deployed on Vercel
+- Backend deployed on Render
+
+---
+
+📂 Project Structure
+
+cab-booking-app
+
+frontend
+
+- pages / app
+- components
+- payment
+- rating
+
+backend
+
+- index.js
+- supabaseClient.js
+- API routes
+
+---
+
+⚙️ Environment Variables
+
+The backend requires the following environment variables:
+
+SUPABASE_URL
+SUPABASE_KEY
+STRIPE_SECRET_KEY
+EMAIL_USER
+EMAIL_PASS
+PORT
+
+---
+
+🚀 Application Flow
+
+1. User books a cab ride
+2. Payment is processed using Stripe
+3. Ride details are stored in Supabase database
+4. Email receipt is sent to the user
+5. After the ride, the user can submit a rating for the driver
+
+---
+
+👩‍💻 Author
+
+Garima Bhushan
